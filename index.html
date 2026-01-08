@@ -3,7 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Enroll Now | Talekar Coaching Classes</title>
+
+  <!-- SEO META TAGS -->
+  <title>Enroll Now | Talekar Coaching Classes – Abacus & Vedic Maths</title>
+  <meta name="description" content="Talekar Coaching Classes offers expert Abacus and Vedic Maths training to improve calculation speed, concentration, and confidence. Admissions open for January 2026." />
+  <meta name="keywords" content="Abacus classes, Vedic Maths, Talekar Coaching Classes, mental maths, kids abacus training" />
+  <meta name="author" content="Talekar Coaching Classes" />
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -16,11 +21,11 @@
       color: #333;
     }
 
-    /* HERO HEADER */
+    /* HEADER */
     header {
-      background: linear-gradient(135deg, #2b4eff, #5f6cff);
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
       color: #fff;
-      padding: 70px 20px 90px;
+      padding: 80px 20px 110px;
       text-align: center;
       border-bottom-left-radius: 40px;
       border-bottom-right-radius: 40px;
@@ -35,7 +40,32 @@
     header p {
       margin-top: 15px;
       font-size: 1.15rem;
-      opacity: 0.95;
+    }
+
+    /* 🔴 ENROLL BUTTON (NO ARROW) */
+    .hero-enroll-btn,
+    .sticky-enroll {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #aade00, #aade00);
+      color: #fff;
+      padding: 16px 44px;
+      font-size: 1.15rem;
+      font-weight: 700;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 14px 35px rgba(255, 255, 255, 0.45);
+      transition: all 0.3s ease;
+    }
+
+    .hero-enroll-btn {
+      margin-top: 32px;
+    }
+
+    .hero-enroll-btn:hover {
+      transform: translateY(-2px) scale(1.05);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.65);
     }
 
     /* BADGE */
@@ -46,7 +76,6 @@
 
     .badge span {
       background: #fff;
-      display: inline-block;
       padding: 12px 32px;
       border-radius: 50px;
       font-weight: 600;
@@ -56,14 +85,14 @@
     .container {
       max-width: 1100px;
       margin: auto;
-      padding: 70px 20px 40px;
+      padding: 70px 20px 100px;
     }
 
     section {
       margin-bottom: 70px;
     }
 
-    /* PROGRAM CARDS */
+    /* PROGRAMS */
     .programs {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -75,113 +104,104 @@
       border-radius: 18px;
       padding: 35px 30px;
       box-shadow: 0 15px 35px rgba(0,0,0,0.08);
-      transition: all 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 25px 50px rgba(0,0,0,0.12);
     }
 
     .card h3 {
-      margin-top: 0;
-      margin-bottom: 15px;
-      font-size: 1.4rem;
-      color: #2b4eff;
+      color: #1e3c72;
     }
 
-    .card ul {
-      padding-left: 18px;
-    }
-
-    .card ul li {
-      margin-bottom: 10px;
-    }
-
-    /* TRUST SECTION (IMAGE) */
-    .trust-section {
+    /* SECTION HEADINGS */
+    .why-us h2,
+    .teacher h2,
+    .testimonials h2,
+    .faq h2 {
       text-align: center;
-    }
-
-    .trust-section h2 {
       font-size: 2rem;
-      margin-bottom: 10px;
+      color: #1e3c72;
+      margin-bottom: 35px;
     }
 
-    .trust-section p {
-      color: #555;
-      margin-bottom: 30px;
-      font-size: 1.05rem;
+    /* WHY US */
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
     }
 
-    .group-photo img {
-      width: 90%;
-      max-width: 900px;
-      border-radius: 22px;
-      box-shadow: 0 20px 45px rgba(0,0,0,0.18);
-    }
-
-    .photo-badge {
-      margin-top: 18px;
-      display: inline-block;
+    .why-card {
       background: #fff;
-      padding: 10px 26px;
-      border-radius: 50px;
+      padding: 20px;
+      border-radius: 16px;
       font-weight: 600;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     }
 
-    /* ENROLL SECTION */
-    .enroll-section {
-      background: linear-gradient(135deg, #f8faff, #eef2ff);
-      border-radius: 24px;
-      padding: 55px 30px;
+    /* TEACHER */
+    .teacher-card {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 35px;
+      border-radius: 20px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.1);
       text-align: center;
-      box-shadow: 0 20px 45px rgba(0,0,0,0.12);
     }
 
-    .enroll-section h2 {
-      font-size: 2.1rem;
-      margin-bottom: 15px;
+    /* TESTIMONIALS */
+    .testimonial-card {
+      max-width: 700px;
+      margin: 0 auto 25px;
+      background: #fff;
+      padding: 25px 30px;
+      border-radius: 18px;
+      font-style: italic;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.1);
     }
 
-    .enroll-section p {
-      font-size: 1.05rem;
-      margin-bottom: 30px;
+    .testimonial-card span {
+      display: block;
+      margin-top: 15px;
+      font-weight: 600;
       color: #555;
     }
 
-    .enroll-btn {
-      display: inline-block;
-      background: linear-gradient(135deg, #ff7a18, #ff9f45);
-      color: #fff;
-      padding: 16px 44px;
-      font-size: 1.15rem;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: 700;
-      box-shadow: 0 10px 30px rgba(255,122,24,0.45);
-      transition: all 0.3s ease;
+    /* FAQ */
+    .faq-item {
+      max-width: 800px;
+      margin: 0 auto 20px;
+      background: #fff;
+      padding: 22px 25px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     }
 
-    .enroll-btn:hover {
-      transform: scale(1.08);
-      box-shadow: 0 15px 40px rgba(255,122,24,0.6);
-    }
-
-    /* FOOTER */
     footer {
-      margin-top: 80px;
       text-align: center;
       padding: 25px;
       background: #e9edff;
       font-size: 0.95rem;
-      color: #444;
     }
 
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2.2rem;
+    /* STICKY ENROLL (MOBILE) */
+    .sticky-enroll {
+      display: none;
+      position: fixed;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 999;
+      animation: pulse 2.1s infinite;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(206, 214, 48, 0.6); }
+      70% { box-shadow: 0 0 0 14px rgba(214,48,49,0); }
+      100% { box-shadow: 0 0 0 0 rgba(214,48,49,0); }
+    }
+
+    @media (max-width: 768px) {
+      .sticky-enroll {
+        display: inline-flex;
       }
     }
   </style>
@@ -189,60 +209,96 @@
 
 <body>
 
-  <header>
-    <h1>Talekar Coaching Classes</h1>
-    <p>Building Strong Mathematical Foundations with Abacus & Vedic Maths</p>
-  </header>
+<header>
+  <h1>Talekar Coaching Classes</h1>
+  <p>Building Strong Mathematical Foundations with Abacus & Vedic Maths</p>
+  <a class="hero-enroll-btn" href="https://forms.gle/KNAJMuHLEYrrjgpQ6" target="_blank">
+    Enroll Now
+  </a>
+</header>
 
-  <div class="badge">
-    <span>Admissions Open for January 2026 • Limited Seats</span>
-  </div>
+<div class="badge">
+  <span>Admissions Open for January 2026 • Limited Seats</span>
+</div>
 
-  <div class="container">
+<div class="container">
 
-    <section class="programs">
-      <div class="card">
-        <h3>Abacus Classes</h3>
-        <ul>
-          <li>Improves calculation speed & accuracy</li>
-          <li>Enhances concentration & memory</li>
-          <li>Boosts confidence in mathematics</li>
-          <li>Structured learning levels</li>
-        </ul>
-      </div>
+  <section class="programs">
+    <div class="card">
+      <h3>Abacus Classes</h3>
+      <ul>
+        <li>Improves calculation speed & accuracy</li>
+        <li>Enhances concentration & memory</li>
+        <li>Boosts confidence in mathematics</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Vedic Maths Classes</h3>
+      <ul>
+        <li>Fast mental calculation techniques</li>
+        <li>Useful for school & competitive exams</li>
+        <li>Strong math fundamentals</li>
+      </ul>
+    </div>
+  </section>
 
-      <div class="card">
-        <h3>Vedic Maths Classes</h3>
-        <ul>
-          <li>Fast mental calculation techniques</li>
-          <li>Useful for school & competitive exams</li>
-          <li>Easy & fun learning methods</li>
-          <li>Strong math fundamentals</li>
-        </ul>
-      </div>
-    </section>
+  <section class="why-us">
+    <h2>Why Choose Talekar Coaching Classes?</h2>
+    <div class="why-grid">
+      <div class="why-card">✔ Certified & Experienced Trainer</div>
+      <div class="why-card">✔ Child-friendly Teaching Approach</div>
+      <div class="why-card">✔ Small Batches & Personal Attention</div>
+      <div class="why-card">✔ Proven Student Results</div>
+    </div>
+  </section>
 
-    <!-- PREVIOUS BATCH PHOTO -->
-    <section class="trust-section">
-      <div class="photo-badge">
-        ✔ Happy learners who successfully completed our Abacus & Vedic Maths programs.
-      </div>
-    </section>
+  <section class="teacher">
+    <h2>Meet Your Teacher</h2>
+    <div class="teacher-card">
+      <p>
+        Talekar Coaching Classes is led by a certified trainer with years of experience
+        in Abacus and Vedic Maths, focusing on clarity, confidence, and measurable results.
+      </p>
+    </div>
+  </section>
 
-    <section class="enroll-section">
-      <h2>Enroll Now – January 2026 Batch</h2>
-      <p>Limited seats available. Fill the admission enquiry form to secure your child’s seat today.</p>
-      <a class="enroll-btn" href="https://forms.gle/KNAJMuHLEYrrjgpQ6" target="_blank">
-        Enroll Now
-      </a>
-    </section>
+  <section class="testimonials">
+    <h2>What Parents Say</h2>
+    <div class="testimonial-card">
+      “My child’s confidence in maths improved significantly.”
+      <span>– Parent of Grade 4 Student</span>
+    </div>
+  </section>
 
-  </div>
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
 
-  <footer>
-    © 2026 Talekar Coaching Classes | Contact: +91 883 055 0221
-  </footer>
+    <div class="faq-item">
+      <h4>What age is suitable for Abacus?</h4>
+      <p>Abacus is ideal for children aged 5 to 14 years.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>Will this help in school maths?</h4>
+      <p>Yes, Abacus & Vedic Maths improve speed, accuracy, and understanding.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>How long is the course?</h4>
+      <p>Each level typically runs for 3 to 4 months.</p>
+    </div>
+
+  </section>
+
+</div>
+
+<a class="sticky-enroll" href="https://forms.gle/KNAJMuHLEYrrjgpQ6" target="_blank">
+  Enroll Now
+</a>
+
+<footer>
+  © 2026 Talekar Coaching Classes | Contact: +91 883 055 0221
+</footer>
 
 </body>
 </html>
-
